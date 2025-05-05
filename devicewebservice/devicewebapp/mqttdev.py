@@ -22,9 +22,7 @@ def on_message(client, userdata, msg):
     if msg.topic == "test/temp1":
         gdata1=str(msg.payload.decode("utf-8"))
         print("message temp1: {}".format(gdata1))
-    if msg.topic == "test/sens1":
-        gdata2=str(msg.payload.decode("utf-8"))
-        print("message temp1: {}".format(gdata2))
+    
 
 def clientconn():
     global client
